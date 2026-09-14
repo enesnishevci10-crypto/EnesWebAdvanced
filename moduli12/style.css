@@ -18,3 +18,12 @@ h3{
 h4{
     text-decoration: underline;
 }
+a{
+    text-decoration: none;
+}
+.myelement{
+    color:darkblue;
+}
+#myelement{
+    color:red;
+}
