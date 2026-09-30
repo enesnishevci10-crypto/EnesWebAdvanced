@@ -1,0 +1,34 @@
+#foto1 img{
+    filter:grayscale(100%);
+    transition: 2s ease-in-out;
+}
+
+#foto1:hover img{
+    filter: grayscale(0%);
+}
+
+#foto2 img{
+    filter:blur(100px);
+    transition: 2s ease-in-out;
+}
+
+#foto2:hover img{
+    filter: blur(0);
+}
+
+#foto3 img{
+    transition: 3s ease-in-out;
+}
+
+#foto3:hover img{
+    margin-left: 300px;
+}
+
+#foto4 img{
+    transform: scale(1);
+    transition: 1s ease-in-out;
+}
+
+#foto4:hover img{
+    transform:scale(2)
+}
