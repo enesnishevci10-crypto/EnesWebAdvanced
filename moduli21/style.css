@@ -1,0 +1,45 @@
+.grupi{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.grupi{
+    color: blue;
+    font-size: 16px;
+}
+
+.card{
+    border:3px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 800px){
+
+.grupi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin:20px;
+}
+
+.pjesady{
+    display: flex;
+    flex-direction: column;
+}
+
+.pjesady img{
+    margin-top: 50px;
+    width: 300px;
+
+    height: 150px;
+}
+}
+
