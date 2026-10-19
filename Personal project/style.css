@@ -32,7 +32,7 @@ nav {
 }
 
 nav a{
-    color: white;
+    color: green;
     text-decoration: none;
     margin-left: 20px;
     transition: 0.3s;
@@ -45,15 +45,23 @@ nav a:hover {
 .hero {
     min-height: 450px;
     padding: 100px 8%;
-    background: 
-    linear-gradient(90deg, #0b0d0b 10%, #0b0d0bbb),
-    url("https://www.google.com/search?q=+fitness&sca_esv=d11bf3d68244a04c&rlz=1C1GCEA_enXK1135XK1135&udm=2&biw=1680&bih=867&sxsrf=APpeQns9vHAnVWhxzorViG6l_spkI14utQ%3A1792001899046&ei=a8fPapuxAuiLi-gPpMqfwQE&ved=2ahUKEwjbkoSlj7qXAxXoxQIHHSTlJxgQ4dUDegQIBhAN&uact=5&oq=+fitness&gs_lp=Egtnd3Mtd2l6LWltZyIIIGZpdG5lc3MyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgoQABiABBiKBRhDMg0QABiABBiKBRhDGLEDSJ0MUPYFWPYJcAJ4AJABAJgBWaABkAOqAQE1uAEDyAEA-AEBmAIHoAKuA5gDAIgGAZIHATegB9obsgcBNbgHpgPCBwUwLjQuM8gHFYAIAQ&sclient=gws-wiz-img#sv=CAMSUxoyKhBlLTNEM0s3Qk1RRGE4SmJNMg4zRDNLN0JNUURhOEpiTToON3NkcW9XTzZYOW01Qk0gBCoXCgFzEhBlLTNEM0s3Qk1RRGE4SmJNGAEwAVACGAcgiLCe5g1KCBACGAEgAigB") center/cover;
 }
 
 .hero h1 {
     font-size: clamp(40px, 7vw, 70px);
     line-height: 1.1;
     margin: 15px 0;
+}
+h2{
+    color: green;
+}
+
+head{
+    color: green;
+}
+
+body{
+    color: green;
 }
 
 .hero > p:first-child,
@@ -79,6 +87,14 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
+#foto7 {
+    width: 100%;
+    max-width: 650px;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 25px auto; 
+    right: 200px;
+}
 .section {
     padding: 70px 8%;
     text-align: center;
@@ -142,4 +158,82 @@ table {
 th {
     background: var(--green);
     color: #111;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+tr:hover td {
+    background: #252a25;
+}
+
+.about {
+    padding: 70px 8%;
+    text-align: center;
+    background: #151915;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 650px;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 25px auto;
+}
+
+.about p:not(.small) {
+    max-width: 700px;
+    margin: 15px auto 25px;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    background: #080a08;
+    padding: 30px 15px;
+}
+
+footer p {
+    color: green;
+    margin: 10px 0;
+}
+
+footer a {
+    color: var(--green);
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 18px 5%;
+    
+}
+
+nav {
+    flex-direction: column;
+}
+
+nav a {
+    margin: 0 8px;
+}
+
+.hero {
+    padding: 80PX 6%;
+}
+
+.cards{
+    flex-direction: column;
+}
+
+
+.card img {
+    height: 220px;
+}
+
+.section,
+.about {
+    padding: 50px 6%;
+}
 }
