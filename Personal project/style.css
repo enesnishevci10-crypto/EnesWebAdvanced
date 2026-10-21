@@ -7,7 +7,7 @@
 
 body {
     background: #0b0d0b;
-    color: white;
+    color: #00ff88;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ nav {
 }
 
 nav a{
-    color: green;
+    color: #00ff88;
     text-decoration: none;
     margin-left: 20px;
     transition: 0.3s;
@@ -47,21 +47,58 @@ nav a:hover {
     padding: 100px 8%;
 }
 
+h1 {
+    font-size: 100px;
+}
 .hero h1 {
     font-size: clamp(40px, 7vw, 70px);
     line-height: 1.1;
     margin: 15px 0;
 }
+
 h2{
-    color: green;
+    color: #00ff88;
 }
 
 head{
-    color: green;
+    color: #00ff88;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px 8%;
+    color: #00ff88;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #008f50;
+    color: white;
+    border: 2px solid #00ff88;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-img {
+    flex: 1;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 body{
-    color: green;
+    color: #00ff88;
 }
 
 .hero > p:first-child,
@@ -74,7 +111,6 @@ body{
 .btn {
     display: inline-block;
     background: var(--green);
-    color: #111;
     text-decoration: none;
     padding: 12px 20px;
     margin-top: 25px;
@@ -83,8 +119,8 @@ body{
 }
 
 .btn:hover {
-    background: white;
-    transform: translateY(-3px);
+    background: #00ff88;
+    color: #111;
 }
 
 #foto7 {
@@ -157,7 +193,7 @@ table {
 
 th {
     background: var(--green);
-    color: #111;
+    color: white;
 }
 
 th, td {
@@ -211,6 +247,25 @@ footer a {
     
 }
 
+.hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 6%;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.hero-img {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 6%;
+}
+.hero-img img {
+    width: 100%;
+}
+
 nav {
     flex-direction: column;
 }
@@ -227,7 +282,11 @@ nav a {
     flex-direction: column;
 }
 
-
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 .card img {
     height: 220px;
 }
@@ -237,3 +296,5 @@ nav a {
     padding: 50px 6%;
 }
 }
+
+ 
